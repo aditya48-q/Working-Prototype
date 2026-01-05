@@ -108,6 +108,20 @@ img {
     background-color: var(--electric-blue);
 }
 
+.cta-button-secondary {
+    background-color: transparent;
+    color: var(--light-text);
+    border: 1px solid var(--light-text);
+    padding: 10px 20px;
+    margin-top: 15px;
+    display: inline-block;
+}
+
+.cta-button-secondary:hover {
+    background-color: var(--light-text);
+    color: var(--dark-text);
+}
+
 section {
     padding: 40px 20px;
     margin-bottom: 40px;

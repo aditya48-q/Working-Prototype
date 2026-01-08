@@ -1,3 +1,4 @@
+
 :root {
     --neon-purple: #9D00FF;
     --electric-blue: #00E5FF;
@@ -101,11 +102,16 @@ img {
     text-decoration: none;
     border-radius: 5px;
     font-weight: bold;
-    transition: background-color 0.3s ease;
+    transition: transform 0.2s ease, background-color 0.3s ease;
 }
 
 .cta-button:hover {
     background-color: var(--electric-blue);
+    transform: scale(1.05);
+}
+
+.cta-button:active {
+  transform: scale(0.95);
 }
 
 .cta-button-secondary {
@@ -350,4 +356,50 @@ h2 {
     section {
         padding: 30px 15px;
     }
+}
+
+/* Animations */
+.reveal {
+  opacity: 0;
+  transition: all 0.7s ease-out;
+}
+
+.reveal.active {
+  opacity: 1;
+}
+
+.fade-up {
+  transform: translateY(40px);
+}
+
+.fade-up.active {
+  transform: translateY(0);
+}
+
+.fade-in {
+  transform: scale(0.9);
+}
+
+.fade-in.active {
+  transform: scale(1);
+}
+
+.slide-in-left {
+  transform: translateX(-40px);
+}
+
+.slide-in-left.active {
+  transform: translateX(0);
+}
+
+.slide-in-right {
+  transform: translateX(40px);
+}
+
+.slide-in-right.active {
+  transform: translateX(0);
+}
+
+.features-grid .feature-card {
+  transition-delay: calc(0.1s * var(--i));
 }

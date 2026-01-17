@@ -278,6 +278,40 @@ h2 {
     opacity: 1;
 }
 
+/* Demo Landing Page */
+.demo-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+}
+
+.demo-box {
+    background-color: #1E1E1E;
+    padding: 40px;
+    border-radius: 15px;
+    width: 450px;
+    text-align: center;
+    border: 1px solid var(--neon-purple);
+}
+
+.demo-box h2 {
+    margin-bottom: 20px;
+}
+
+.demo-box .subtext {
+    margin-bottom: 30px;
+}
+
+.demo-box .credentials {
+    margin-bottom: 30px;
+    text-align: left;
+}
+
+.demo-box .credentials p {
+    margin: 10px 0;
+}
+
 /* Responsive Design */
 @media (max-width: 1024px) { /* Tablet */
     .dashboard-main {
@@ -321,7 +355,7 @@ h2 {
         grid-template-columns: 1fr;
     }
 
-    .login-box {
+    .login-box, .demo-box {
         width: 90%;
         padding: 30px;
     }

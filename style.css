@@ -1,4 +1,6 @@
-
+*{
+    text-align: center;
+}
 :root {
     --neon-purple: #9D00FF;
     --electric-blue: #00E5FF;
